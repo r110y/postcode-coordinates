@@ -3,8 +3,6 @@ import postcodes from "./public/postcodes.json" assert { type: "json" };
 const loadBtn = document.getElementById("load");
 const status = document.querySelector(".status");
 
-console.log(status);
-
 async function getPostcode(postcode) {
   try {
     const response = await fetch(
